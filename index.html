@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,79 @@
   --shadow-lg: 0 20px 60px rgba(0,0,0,0.18);
 }
 
+
+[data-theme="dark"] body{background:#0d1a10;color:#f0f0f0}
+[data-theme="dark"] nav{background:#122016}
+[data-theme="dark"] .trust-bar{background:#122016}
+[data-theme="dark"] .about-section{background:#122016}
+[data-theme="dark"] .condition-card{background:#1a2d1e;border-color:#253325}
+[data-theme="dark"] .condition-name{color:#e0e0e0}
+[data-theme="dark"] .testimonial-card{background:#1a2d1e}
+[data-theme="dark"] .branch-card{background:#162212}
+[data-theme="dark"] .book-form,[data-theme="dark"] .contact-form{background:#1a2d1e}
+[data-theme="dark"] .form-group input,[data-theme="dark"] .form-group select,[data-theme="dark"] .form-group textarea{background:#122016;border-color:#253325;color:#f0f0f0}
+[data-theme="dark"] .section-title{color:#6dcc96}
+[data-theme="dark"] .branch-city{color:#6dcc96}
+[data-theme="dark"] .trust-item .number{color:#6dcc96}
+[data-theme="dark"] .about-stat .num{color:#6dcc96}
+[data-theme="dark"] .about-stat{background:#122016}
+[data-theme="dark"] .modal-box{background:#1a2d1e}
+[data-theme="dark"] .modal-title{color:#6dcc96}
+[data-theme="dark"] .modal-close{background:#253325;color:#f0f0f0}
+[data-theme="dark"] .modal-treatment{background:#122016}
+[data-theme="dark"] .modal-treatment h4{color:#6dcc96}
+[data-theme="dark"] .qual-tag{background:rgba(109,204,150,.15);color:#6dcc96}
+[data-theme="dark"] .treatment-card{background:#1a2d1e}
+[data-theme="dark"] .treatment-card h3{color:#6dcc96}
+[data-theme="dark"] .category-title{color:#6dcc96}
+[data-theme="dark"] .section-tag{background:rgba(109,204,150,.15);color:#6dcc96}
+[data-theme="dark"] .condition-badge{background:rgba(109,204,150,.15);color:#6dcc96}
+[data-theme="dark"] .modal-symptoms ul li{background:rgba(109,204,150,.15);color:#6dcc96}
+[data-theme="dark"] .nav-logo-text .name{color:#6dcc96}
+[data-theme="dark"] .author-name{color:#6dcc96}
+[data-theme="dark"] .form-title{color:#6dcc96}
+[data-theme="dark"] .about-stat{background:#122016}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:none}
+.hamburger span{width:23px;height:2px;background:currentColor;border-radius:2px;display:block}
+.mobile-menu{display:none;position:fixed;top:75px;left:0;right:0;background:#fff;box-shadow:0 8px 32px rgba(0,0,0,.12);z-index:999;padding:14px;flex-direction:column;gap:6px}
+[data-theme="dark"] .mobile-menu{background:#122016}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#1a1a1a;font-size:15px;font-weight:500;padding:13px 16px;border-radius:9px;cursor:pointer;transition:all .2s}
+[data-theme="dark"] .mobile-menu a{color:#f0f0f0}
+.mobile-menu a:hover{background:#faf8f3;color:#0a4a2e}
+.mobile-menu .mob-cta{background:#0a4a2e;color:#fff!important;text-align:center;margin-top:4px}
+.theme-toggle{background:#faf8f3;border:2px solid #e8e8e8;border-radius:20px;padding:5px 11px;cursor:pointer;font-size:14px;font-family:'DM Sans',sans-serif;display:inline-flex;align-items:center;gap:5px;transition:all .2s;margin-left:8px;white-space:nowrap;color:#1a1a1a}
+[data-theme="dark"] .theme-toggle{background:#122016;border-color:#253325;color:#f0f0f0}
+.theme-toggle:hover{border-color:#1a7a4a}
+@media(max-width:900px){.nav-links{display:none!important}.hamburger{display:flex!important}nav{padding:0 16px!important}}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:10000;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(5px)}
+.modal-overlay.open{display:flex}
+.modal-box{background:#fff;border-radius:20px;padding:32px;max-width:540px;width:100%;position:relative;box-shadow:0 24px 70px rgba(0,0,0,.25);animation:mIn .3s ease;max-height:92vh;overflow-y:auto}
+@keyframes mIn{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal-close{position:absolute;top:14px;right:14px;background:#f0f0f0;border:none;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;color:#222;display:flex;align-items:center;justify-content:center}
+.modal-icon{font-size:46px;margin-bottom:10px;display:block}
+.modal-title{font-family:'Playfair Display',serif;font-size:24px;color:#0a4a2e;margin-bottom:10px}
+.modal-desc{color:#4a4a4a;font-size:14px;line-height:1.82;margin-bottom:14px}
+.modal-symptoms h4{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:8px}
+.modal-symptoms ul{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.modal-symptoms ul li{background:rgba(26,122,74,.1);color:#1a7a4a;font-size:11px;font-weight:600;padding:4px 11px;border-radius:50px}
+.modal-treatment{background:#faf8f3;border-radius:12px;padding:14px 16px;margin-bottom:18px;border-left:4px solid #2eaa6a}
+.modal-treatment h4{font-size:13px;color:#0a4a2e;font-weight:700;margin-bottom:5px}
+.modal-treatment p{font-size:12px;color:#4a4a4a;line-height:1.72}
+.modal-wa-btn{width:100%;background:#25D366;color:#fff;border:none;padding:14px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-family:'DM Sans',sans-serif;text-decoration:none;transition:all .2s}
+.modal-wa-btn:hover{background:#1fba58}
+@media(max-width:480px){.modal-box{padding:22px}}
+.hero-img-duo{position:relative;display:flex;align-items:flex-end;justify-content:center;height:420px}
+.hi-main{width:58%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);border:4px solid rgba(200,168,75,.35);z-index:2;transform:translateX(16px)}
+.hi-clinic{width:46%;height:78%;object-fit:cover;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25);border:4px solid rgba(46,170,106,.35);z-index:1;transform:translateX(-14px) translateY(20px);opacity:.92}
+@media(max-width:900px){.hero-img-duo{height:300px}.hi-main{width:55%}.hi-clinic{width:42%}}
+@media(max-width:480px){.hero-img-duo{height:240px}.hi-clinic{display:none}.hi-main{width:80%;transform:none}}
+.about-img-duo{position:relative}
+.about-main-photo{width:100%;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);object-fit:cover;max-height:480px}
+.about-small-photo{position:absolute;bottom:-18px;right:-18px;width:42%;border-radius:14px;border:4px solid #fff;box-shadow:0 10px 30px rgba(0,0,0,.2);object-fit:cover;height:175px}
+@media(max-width:768px){.about-small-photo{width:38%;height:140px;right:-10px}}
+@media(max-width:480px){.about-small-photo{display:none}}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -42,8 +115,9 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   color: var(--white);
   padding: 8px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 20px;
   font-size: 13px;
 }
 .topbar a { color: var(--gold-light); text-decoration: none; }
@@ -969,12 +1043,22 @@ footer {
 </head>
 <body>
 
+<div class="modal-overlay" id="diseaseModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+    <span class="modal-icon" id="mIcon"></span>
+    <div class="modal-title" id="mTitle"></div>
+    <div class="modal-desc" id="mDesc"></div>
+    <div class="modal-symptoms"><h4>Common Symptoms</h4><ul id="mSymp"></ul>
+    <div class="modal-treatment"><h4>&#x1F33F; How Dr. Suneel Treats This</h4><p id="mTreat"></p></div></div>
+    <a id="mWa" href="#" target="_blank" class="modal-wa-btn">&#x1F4AC; WhatsApp Us for This Condition</a>
+  </div>
+</div>
 <!-- WhatsApp Float -->
 <a href="https://wa.me/9127791277" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">💬</a>
 
 <!-- Top Bar -->
 <div class="topbar">
-  <div>📍 Main Branch: Chilakaluripeta | 5 Branches across Andhra Pradesh</div>
   <div class="topbar-right">
     <span>📞 <a href="tel:9127791277">91277 91277</a></span>
     <span>✉️ <a href="/cdn-cgi/l/email-protection#ee8a9c9d9b808b8b82d6dcae89838f8782c08d8183"><span class="__cf_email__" data-cfemail="adc9dfded8c3c8c8c1959fedcac0ccc4c183cec2c0">[email&#160;protected]</span></a></span>
@@ -1017,7 +1101,7 @@ footer {
         </div>
       </div>
       <div class="hero-image-wrap">
-        <img src="images/doctor2.jpeg" alt="Dr. Puvvada Venkata Suneel Kumar">
+        <div class="hero-img-duo"><img src="images/doctor2.jpeg" class="hi-main" alt="Dr. Suneel Kumar"><img src="images/doctor1.jpeg" class="hi-clinic" alt="Dr. Suneel in Clinic"></div>
         <div class="hero-card card1">
           <span class="icon">🏥</span>
           <div>
@@ -1073,22 +1157,22 @@ footer {
       <h2 class="section-title">Common Health Conditions<br>We Specialise In</h2>
       <p class="section-sub">From chronic to acute — we treat all diseases safely and naturally using the power of homeopathy.</p>
       <div class="conditions-grid">
-        <div class="condition-card"><div class="condition-icon">🦴</div><div class="condition-name">Arthritis</div></div>
-        <div class="condition-card"><div class="condition-icon">🩺</div><div class="condition-name">Diabetes</div></div>
-        <div class="condition-card"><div class="condition-icon">❤️</div><div class="condition-name">Hypertension</div></div>
-        <div class="condition-card"><div class="condition-icon">🌿</div><div class="condition-name">Psoriasis</div></div>
-        <div class="condition-card"><div class="condition-icon">🧠</div><div class="condition-name">Migraine</div></div>
-        <div class="condition-card"><div class="condition-icon">🌬️</div><div class="condition-name">Asthma</div></div>
-        <div class="condition-card"><div class="condition-icon">🫘</div><div class="condition-name">Kidney Stones</div></div>
-        <div class="condition-card"><div class="condition-icon">🦋</div><div class="condition-name">Thyroid Disorders</div></div>
-        <div class="condition-card"><div class="condition-icon">👁️</div><div class="condition-name">Vision Problems</div></div>
-        <div class="condition-card"><div class="condition-icon">💆</div><div class="condition-name">Sciatica</div></div>
-        <div class="condition-card"><div class="condition-icon">💇</div><div class="condition-name">Hair Loss</div></div>
-        <div class="condition-card"><div class="condition-icon">🌸</div><div class="condition-name">PCOD / PCOS</div></div>
-        <div class="condition-card"><div class="condition-icon">🧒</div><div class="condition-name">Children's Health</div></div>
-        <div class="condition-card"><div class="condition-icon">🧩</div><div class="condition-name">Autism Care</div></div>
-        <div class="condition-card"><div class="condition-icon">🤧</div><div class="condition-name">Allergies</div></div>
-        <div class="condition-card"><div class="condition-icon">🔍</div><div class="condition-name">+ Many More</div></div>
+        <div class="condition-card" onclick="openDisease('arthritis')" style="cursor:pointer"><div class="condition-icon">🦴</div><div class="condition-name">Arthritis</div></div>
+        <div class="condition-card" onclick="openDisease('diabetes')" style="cursor:pointer"><div class="condition-icon">🩺</div><div class="condition-name">Diabetes</div></div>
+        <div class="condition-card" onclick="openDisease('hypertension')" style="cursor:pointer"><div class="condition-icon">❤️</div><div class="condition-name">Hypertension</div></div>
+        <div class="condition-card" onclick="openDisease('psoriasis')" style="cursor:pointer"><div class="condition-icon">🌿</div><div class="condition-name">Psoriasis</div></div>
+        <div class="condition-card" onclick="openDisease('migraine')" style="cursor:pointer"><div class="condition-icon">🧠</div><div class="condition-name">Migraine</div></div>
+        <div class="condition-card" onclick="openDisease('asthma')" style="cursor:pointer"><div class="condition-icon">🌬️</div><div class="condition-name">Asthma</div></div>
+        <div class="condition-card" onclick="openDisease('kidney')" style="cursor:pointer"><div class="condition-icon">🫘</div><div class="condition-name">Kidney Stones</div></div>
+        <div class="condition-card" onclick="openDisease('thyroid')" style="cursor:pointer"><div class="condition-icon">🦋</div><div class="condition-name">Thyroid Disorders</div></div>
+        <div class="condition-card" onclick="openDisease('vision')" style="cursor:pointer"><div class="condition-icon">👁️</div><div class="condition-name">Vision Problems</div></div>
+        <div class="condition-card" onclick="openDisease('sciatica')" style="cursor:pointer"><div class="condition-icon">💆</div><div class="condition-name">Sciatica</div></div>
+        <div class="condition-card" onclick="openDisease('hairloss')" style="cursor:pointer"><div class="condition-icon">💇</div><div class="condition-name">Hair Loss</div></div>
+        <div class="condition-card" onclick="openDisease('pcod')" style="cursor:pointer"><div class="condition-icon">🌸</div><div class="condition-name">PCOD / PCOS</div></div>
+        <div class="condition-card" onclick="openDisease('children')" style="cursor:pointer"><div class="condition-icon">🧒</div><div class="condition-name">Children's Health</div></div>
+        <div class="condition-card" onclick="openDisease('autism')" style="cursor:pointer"><div class="condition-icon">🧩</div><div class="condition-name">Autism Care</div></div>
+        <div class="condition-card" onclick="openDisease('allergy')" style="cursor:pointer"><div class="condition-icon">🤧</div><div class="condition-name">Allergies</div></div>
+        <div class="condition-card" onclick="openDisease('more')" style="cursor:pointer"><div class="condition-icon">🔍</div><div class="condition-name">+ Many More</div></div>
       </div>
       <div style="text-align:center;margin-top:40px;">
         <a href="#" onclick="showPage('treatments')" class="btn-primary">View All Treatments →</a>
@@ -1142,7 +1226,7 @@ footer {
     <div class="section-inner">
       <div class="about-grid">
         <div class="about-image">
-          <img src="images/doctor1.jpeg" alt="Dr. Puvvada Venkata Suneel Kumar">
+          <div class="about-img-duo"><img src="images/doctor2.jpeg" class="about-main-photo" alt="Dr. Suneel Kumar"><img src="images/doctor1.jpeg" class="about-small-photo" alt="Dr. Suneel in Clinic"></div>
         </div>
         <div>
           <div class="section-tag">Meet Your Doctor</div>
@@ -1240,7 +1324,7 @@ footer {
     <div class="section-inner">
       <div class="about-grid" style="margin-top:0;">
         <div class="about-image">
-          <img src="images/doctor2.jpeg" alt="Dr. Puvvada Venkata Suneel Kumar">
+          <div class="about-img-duo"><img src="images/doctor2.jpeg" class="about-main-photo" alt="Dr. Suneel Kumar"><img src="images/doctor1.jpeg" class="about-small-photo" alt="Dr. Suneel in Clinic"></div>
         </div>
         <div>
           <h2 class="section-title">Dr. Puvvada Venkata<br>Suneel Kumar</h2>
@@ -1560,18 +1644,18 @@ footer {
           <div class="form-row">
             <div class="form-group">
               <label>Full Name *</label>
-              <input type="text" placeholder="Your full name">
+              <input type="text" id="a-name" placeholder="Your full name">
             </div>
             <div class="form-group">
               <label>Age</label>
-              <input type="number" placeholder="Your age">
+              <input type="number" id="a-age" placeholder="Your age">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label>Gender</label>
-              <select>
-                <option>Select Gender</option>
+              <select id="a-gender">
+                <option value="">Select Gender</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
@@ -1579,7 +1663,7 @@ footer {
             </div>
             <div class="form-group">
               <label>Phone Number *</label>
-              <input type="tel" placeholder="+91 or country code">
+              <input type="tel" id="a-phone" placeholder="+91 or country code">
             </div>
           </div>
           <div class="form-group">
@@ -1589,7 +1673,7 @@ footer {
           <div class="form-row">
             <div class="form-group">
               <label>City / Country</label>
-              <input type="text" placeholder="Your city or country">
+              <input type="text" id="a-city" placeholder="Your city or country">
             </div>
             <div class="form-group">
               <label>Select Branch / Mode</label>
@@ -1606,17 +1690,17 @@ footer {
           </div>
           <div class="form-group">
             <label>Your Health Concern *</label>
-            <textarea placeholder="Describe your health condition or symptoms..."></textarea>
+            <textarea id="a-concern" placeholder="Describe your health condition or symptoms..."></textarea>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label>Preferred Date</label>
-              <input type="date">
+              <input type="date" id="a-date">
             </div>
             <div class="form-group">
               <label>Preferred Time</label>
-              <select>
-                <option>Select Time</option>
+              <select id="a-time">
+                <option value="">Select Time</option>
                 <option>9:00 AM – 12:00 PM</option>
                 <option>12:00 PM – 2:00 PM</option>
                 <option>5:00 PM – 7:00 PM</option>
@@ -1625,7 +1709,7 @@ footer {
               </select>
             </div>
           </div>
-          <button class="btn-submit">📅 Submit Appointment Request</button>
+          <button class="btn-submit" onclick="sendApptWA()">💬 Send via WhatsApp to Book</button>
           <div style="text-align:center;margin-top:20px;font-size:14px;color:var(--text-light);">
             Or directly reach us on WhatsApp:
             <a href="https://wa.me/9127791277" style="color:var(--green-mid);font-weight:700;"> 91277 91277</a>
@@ -1728,11 +1812,11 @@ footer {
           <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--green-deep);margin-bottom:28px;">Send Us a Message</h3>
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="Full name">
+            <input type="text" id="c-name" placeholder="Full name">
           </div>
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="tel" placeholder="+91 or country code">
+            <input type="tel" id="c-phone" placeholder="+91 or country code">
           </div>
           <div class="form-group">
             <label>Email (Optional)</label>
@@ -1740,9 +1824,9 @@ footer {
           </div>
           <div class="form-group">
             <label>Message</label>
-            <textarea placeholder="How can we help you?" style="height:130px;"></textarea>
+            <textarea id="c-msg" placeholder="How can we help you?" style="height:130px;"></textarea>
           </div>
-          <button class="btn-submit">Send Message</button>
+          <button class="btn-submit" onclick="sendContactWA()">💬 Send via WhatsApp</button>
         </div>
       </div>
     </div>
@@ -1810,4 +1894,24 @@ function showPage(pageId) {
 }
 
 function showTab(tab) {
-  document.getElementById('tab-indian
+  document.getElementById('tab-indian'tab-indian').style.display = tab === 'indian' ? 'grid' : 'none';
+  document.getElementById('tab-intl').style.display = tab === 'intl' ? 'grid' : 'none';
+  document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', (i === 0 && tab === 'indian') || (i === 1 && tab === 'intl'));
+  });
+}
+
+const DZ={arthritis:{icon:'🦴',title:'Arthritis',desc:'Arthritis causes chronic joint pain, stiffness and swelling. Homeopathy treats the root inflammatory cause permanently without steroids or surgery.',symptoms:['Joint Pain','Swelling','Morning Stiffness','Reduced Mobility','Redness','Tenderness'],treat:'Using Robotic Pulse Diagnosis, Dr. Suneel identifies your constitutional cause. Remedies like Rhus Tox, Bryonia and Arnica reduce inflammation and strengthen joints permanently with zero side effects.'},diabetes:{icon:'🩺',title:'Diabetes',desc:'Diabetes disrupts blood sugar regulation causing serious complications if untreated. Homeopathy works holistically to improve insulin sensitivity and protect organs.',symptoms:['High Blood Sugar','Frequent Urination','Excessive Thirst','Fatigue','Blurred Vision','Slow Healing'],treat:'Remedies like Syzygium, Uranium Nitricum and Phosphorus regulate blood sugar naturally — reducing medication dependency and preventing complications safely.'},hypertension:{icon:'❤️',title:'Hypertension',desc:'High blood pressure silently damages the heart, kidneys and vessels. Homeopathy addresses underlying causes for lasting natural control.',symptoms:['High Blood Pressure','Headaches','Dizziness','Chest Tightness','Breathlessness','Nosebleeds'],treat:'Constitutional remedies like Crataegus, Rauwolfia and Nux Vomica normalise blood pressure without chemicals — safely and permanently.'},psoriasis:{icon:'🌿',title:'Psoriasis',desc:'Psoriasis is a chronic autoimmune condition causing red, scaly, itchy patches. Homeopathy corrects the immune imbalance at the root — healing skin permanently.',symptoms:['Red Scaly Patches','Dry Cracked Skin','Intense Itching','Thickened Nails','Joint Pain','Skin Bleeding'],treat:'Remedies like Graphites, Sulphur and Arsenicum Album heal skin from within — correcting the immune system and achieving clear skin permanently without steroid creams.'},migraine:{icon:'🧠',title:'Migraine & Headache',desc:'Migraines cause debilitating headaches with nausea and extreme light sensitivity. Homeopathy reduces both frequency and severity naturally.',symptoms:['Severe Throbbing Headache','Nausea & Vomiting','Light Sensitivity','Sound Sensitivity','Visual Disturbances','Neck Stiffness'],treat:'Remedies like Belladonna, Gelsemium and Natrum Mur address the neurological root — significantly reducing migraine frequency and eventually eliminating them.'},asthma:{icon:'🌬️',title:'Asthma',desc:'Asthma causes recurring breathlessness and wheezing due to airway inflammation. Homeopathy strengthens lung function for long-term relief.',symptoms:['Breathlessness','Wheezing','Chest Tightness','Chronic Cough','Shortness of Breath','Night Symptoms'],treat:'Remedies like Arsenicum Album, Ipecac and Blatta Orientalis treat immune hypersensitivity — reducing inhaler dependency and achieving complete freedom from asthma attacks.'},kidney:{icon:'🫘',title:'Kidney Stones',desc:'Kidney stones cause severe pain when passing through the urinary tract. Homeopathy dissolves smaller stones and prevents recurrence naturally.',symptoms:['Severe Back or Side Pain','Painful Urination','Blood in Urine','Frequent Urination','Nausea & Vomiting','Fever with chills'],treat:'Remedies like Berberis Vulgaris, Lycopodium and Cantharis dissolve stones, relieve pain and correct the metabolic tendency — preventing recurrence without surgery.'},thyroid:{icon:'🦋',title:'Thyroid Disorders',desc:'Thyroid disorders cause hormonal imbalances affecting metabolism, energy, weight and mood. Homeopathy restores natural thyroid function safely.',symptoms:['Unexplained Weight Changes','Fatigue & Weakness','Mood Swings','Hair Loss','Neck Swelling','Temperature Sensitivity'],treat:'Remedies like Thyroidinum, Calcarea Carb and Iodum regulate thyroid function naturally — reducing dependency on thyroid medications and restoring hormonal balance permanently.'},vision:{icon:'👁️',title:'Vision Problems',desc:'Homeopathy treats red eyes, dry eyes, blurry vision, conjunctivitis and early-stage retinal issues safely for all ages.',symptoms:['Blurry Vision','Red Bloodshot Eyes','Dry Itchy Eyes','Watering Eyes','Swelling & Puffiness','Burning Sensation'],treat:'Remedies like Euphrasia, Ruta Graveolens and Belladonna address inflammation and visual disturbances from within — improving eye health naturally without surgery.'},sciatica:{icon:'💆',title:'Sciatica',desc:'Sciatica causes sharp shooting pain along the sciatic nerve from the lower back through the legs — usually from a herniated disc.',symptoms:['Shooting Leg Pain','Lower Back Pain','Numbness in Legs','Tingling Sensation','Leg Weakness','Pain while Sitting'],treat:'Remedies like Colocynthis, Magnesia Phosphorica and Rhus Tox reduce nerve inflammation — restoring normal nerve function and eliminating sciatica without surgery or injections.'},hairloss:{icon:'💇',title:'Hair Loss',desc:'Hair loss results from hormonal imbalances, nutritional deficiencies, stress or genetic factors. Homeopathy addresses the root cause to restore healthy hair growth.',symptoms:['Excessive Hair Fall','Bald Patches','Male Pattern Baldness','Thinning Hair','Scalp Infection','Alopecia Areata'],treat:'Remedies like Silicea, Natrum Mur and Phosphorus correct internal imbalances, nourish hair follicles and promote new healthy hair growth permanently.'},pcod:{icon:'🌸',title:'PCOD / PCOS',desc:'PCOD/PCOS causes irregular periods, ovarian cysts, weight gain and fertility issues. Homeopathy restores hormonal balance safely.',symptoms:['Irregular Periods','Weight Gain','Acne','Excessive Hair Growth','Mood Swings','Fertility Issues'],treat:'Remedies like Pulsatilla, Sepia and Calcarea Carb regulate hormones, reduce ovarian cysts and normalise periods — without hormonal pills or surgery.'},children:{icon:'🧒',title:"Children's Health",desc:"Children respond exceptionally well to homeopathy. 100% safe and gentle for recurring infections, allergies and boosting immunity.",symptoms:['Recurring Colds & Fever','Low Immunity','Digestive Problems','Allergies','Behavioural Issues','Poor Growth'],treat:"Gentle constitutional remedies strengthen your child's immunity, address recurring health issues and support healthy development — completely safe with zero side effects."},autism:{icon:'🧩',title:'Autism Care',desc:'Dr. Suneel is a certified autism care specialist offering holistic treatment supporting communication, social behaviour and cognitive development.',symptoms:['Communication Difficulties','Social Challenges','Repetitive Behaviour','Sensory Sensitivities','Delayed Speech','Focus Issues'],treat:'Certified in autism care, Dr. Suneel uses constitutional remedies to improve communication, reduce sensory hypersensitivity and support social development — enhancing quality of life.'},allergy:{icon:'🤧',title:'Allergies',desc:'Allergies occur when the immune system overreacts to harmless substances. Homeopathy desensitises the immune system for long-term relief.',symptoms:['Sneezing','Runny Nose','Itchy Watery Eyes','Skin Rashes','Breathing Difficulty','Headache'],treat:'Remedies like Allium Cepa, Apis Mellifica and Natrum Mur correct immune hypersensitivity at its source — providing permanent allergy relief naturally.'},piles:{icon:'🏥',title:'Piles / Hemorrhoids',desc:'Piles cause pain, bleeding and discomfort. Homeopathy offers a non-surgical permanent solution for all types of piles.',symptoms:['Pain & Bleeding','Swelling & Itching','Burning Sensation','Difficulty Sitting','Lump near Anus','Constipation'],treat:'Remedies like Aesculus, Hamamelis and Nux Vomica shrink hemorrhoids, stop bleeding and relieve pain — permanent relief without surgery or side effects.'},gas:{icon:'💨',title:'Gas & Bloating',desc:'Chronic gas and bloating indicate digestive imbalances. Homeopathy corrects digestive function from within for lasting comfort.',symptoms:['Bloating','Excessive Gas','Stomach Cramps','Belching','Indigestion','Discomfort after Eating'],treat:'Remedies like Lycopodium, Carbo Veg and Nux Vomica address the root digestive weakness — improving gut function and providing lasting relief from bloating permanently.'},skin:{icon:'✨',title:'Skin Disorders / Acne',desc:'Skin conditions reflect internal imbalances. Homeopathy treats skin from within for clear, healthy skin without harsh chemicals.',symptoms:['Pimples & Acne','Redness & Inflammation','Dry or Oily Skin','Blackheads','Scarring','Skin Sensitivity'],treat:'Remedies like Sulphur, Pulsatilla and Hepar Sulph correct hormonal imbalances and immune reactions causing skin issues — for clear, healthy skin naturally.'},hearing:{icon:'👂',title:'Hearing Problems',desc:'Homeopathy addresses tinnitus, partial hearing loss and ear conditions through holistic treatment improving nerve and circulatory health.',symptoms:['Ringing in Ears','Partial Hearing Loss','Ear Fullness','Dizziness','Ear Pain','Sound Sensitivity'],treat:'Remedies like Chenopodium, Kali Mur and China address underlying causes — improving blood flow to the ear, reducing inflammation and strengthening nerve function safely.'},more:{icon:'🔍',title:'Many More Conditions',desc:"Dr. Suneel treats all types of diseases. If you don't see your condition, WhatsApp us and we will personally guide you.",symptoms:['Any Chronic Condition','Any Acute Illness','Autoimmune Disorders','Hormonal Issues','Nerve Conditions','Lifestyle Diseases'],treat:"With 25+ years experience and 30,000+ patients treated, Dr. Suneel has handled an extremely wide range of conditions. WhatsApp us with your condition."}};
+
+function openDisease(k){var d=DZ[k];if(!d)return;document.getElementById('mIcon').textContent=d.icon;document.getElementById('mTitle').textContent=d.title;document.getElementById('mDesc').textContent=d.desc;document.getElementById('mSymp').innerHTML=d.symptoms.map(function(s){return'<li>'+s+'</li>';}).join('');document.getElementById('mTreat').textContent=d.treat;var msg=encodeURIComponent('Hello Dr. Suneel, I would like to know about treatment for '+d.title+'.');document.getElementById('mWa').href='https://wa.me/919127791277?text='+msg;document.getElementById('diseaseModal').classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(){document.getElementById('diseaseModal').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+function sendApptWA(){var n=document.getElementById('a-name');var ag=document.getElementById('a-age');var ge=document.getElementById('a-gender');var ph=document.getElementById('a-phone');var ci=document.getElementById('a-city');var br=document.getElementById('a-branch');var co=document.getElementById('a-concern');var da=document.getElementById('a-date');var ti=document.getElementById('a-time');var msg='Hello Dr. Suneel, I would like to book an appointment.\n\nName: '+(n?n.value:'N/A')+'\nAge/Gender: '+(ag?ag.value:'')+' '+(ge?ge.value:'')+'\nPhone: '+(ph?ph.value:'N/A')+'\nCity/Country: '+(ci?ci.value:'')+'\nBranch/Mode: '+(br?br.value:'')+'\nHealth Concern: '+(co?co.value:'N/A')+'\nDate: '+(da?da.value:'')+'\nTime: '+(ti?ti.value:'');window.open('https://wa.me/919127791277?text='+encodeURIComponent(msg),'_blank');}
+function sendContactWA(){var n=document.getElementById('c-name');var p=document.getElementById('c-phone');var m=document.getElementById('c-msg');var text='Hello Dr. Suneel,\n\nName: '+(n?n.value:'N/A')+'\nPhone: '+(p?p.value:'N/A')+'\nMessage: '+(m?m.value:'N/A');window.open('https://wa.me/919127791277?text='+encodeURIComponent(text),'_blank');}
+function toggleTheme(){var h=document.documentElement;var dark=h.getAttribute('data-theme')==='dark';h.setAttribute('data-theme',dark?'light':'dark');var btn=document.getElementById('themeBtn');if(btn)btn.textContent=dark?'🌙 Dark':'☀️ Light';localStorage.setItem('drSuneelTheme',dark?'light':'dark');}
+(function(){var saved=localStorage.getItem('drSuneelTheme');var sys=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';var theme=saved||sys;document.documentElement.setAttribute('data-theme',theme);var btn=document.getElementById('themeBtn');if(btn)btn.textContent=theme==='dark'?'☀️ Light':'🌙 Dark';})();
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Dr. Suneel's International Homeo Care
 
-Official website for **Dr. Suneel's International Homeo Care** — a trusted homeopathic clinic with 25+ years of experience serving 30,000+ patients across India and worldwide.
+Official website for **Dr. Suneel's International Homoeo Care** — a trusted homeopathic clinic with 25+ years of experience serving 30,000+ patients across India and worldwide.
 
 ## About
 
@@ -8,7 +8,7 @@ Official website for **Dr. Suneel's International Homeo Care** — a trusted hom
 BHMS, MD (Hom), MD (AM), Pgdems, Cusg  
 Certified in Autism Care  
 
-Website: [drsuneel homeo care](https://yourusername.github.io/drsuneel)  
+Website: [drsuneel homoeo care](https://yourusername.github.io/drsuneel)  
 Contact: 91277 91277  
 Email: drsuneel82@gmail.com
 
